@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+#container {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+/* Header */
+header {
+    background: url("images/central_park.jpg") 0 -200px no-repeat;
+    background-size: 150%;
+    height: 400px;
+    padding-top: 20px;
+    padding-left: 100px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+/* Navigation */
+nav {
+    background-color: #efe7df;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    padding: 0 20px;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+nav li a:link {
+    color: #000;
+}
+
+nav li a:visited {
+    color: #818db3;
+}
+
+nav li a:hover {
+    color: #333;
+}
+
+nav li a:active {
+    color: #753a30;
+}
+
+/* Main */
+main {
+    margin: 50px;
+}
+
+main h1 {
+    color: rgb(129, 141, 179);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Footer */
+footer {
+    height: 40px;
+    background-color: #818db3;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+/* Table styling for page2 */
+table {
+    margin-top: 35px;
+    border-collapse: collapse;
+}
+
+table,
+caption,
+th,
+td {
+    border: 1px solid #000;
+}
+
+th,
+td {
+    width: 150px;
+    height: 35px;
+    text-align: center;
+}
+
+caption {
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 40px;
+    padding-top: 15px;
+    color: #753a30;
+}
+
+/* Form styling for page3 */
+form {
+    width: 500px;
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 300px;
+    height: 25px;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+}
