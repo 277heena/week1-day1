@@ -1,62 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Third Web Page</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>My Third Web Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="container">
 
-    <header>My Web Site Brand</header>
+<div id="container">
+
+    <header>
+        My Web Site Brand
+    </header>
 
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="page2.html">About</a></li>
-        <li>Gallery</li>
-        <li><a href="page3.html">Contact</a></li>
-      </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">About</a></li>
+            <li><a href="page2.html">Gallery</a></li>
+            <li><a href="page3.html">Contact</a></li>
+        </ul>
     </nav>
 
     <main>
-      <h1>My Third Heading</h1>
-      <p>My Third paragraph.</p>
+        <h1>My Third Heading</h1>
+        <p>My Third paragraph.</p>
 
-      <form action="/signup" method="post">
-        <fieldset>
-          <legend>User personal information</legend>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="fullname">*User personal information</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+            </div>
 
-          <label>Enter your full name</label>
-          <input type="text" name="name">
+            <div class="form-group">
+                <label for="email">Enter your email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
 
-          <label>Enter your email</label>
-          <input type="email" name="email">
+            <div class="form-group">
+                <label for="website">Enter your website</label>
+                <input type="text" id="website" name="website" placeholder="Enter your website">
+            </div>
 
-          <label>Enter your phone</label>
-          <input type="text" name="phone">
+            <div class="form-group">
+                <label>Select your gender</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+            </div>
 
-          <label>Select your gender</label>
-          <input type="radio" name="gender" value="male"> Male
-          <input type="radio" name="gender" value="female"> Female
+            <div class="form-group">
+                <label for="comment">How should we contact you?</label>
+                <input type="text" id="comment" name="comment">
+            </div>
 
-          <label>How should we contact you?</label>
-          <select>
-            <option>Email</option>
-            <option>Phone</option>
-          </select>
+            <div class="form-group">
+                <label for="comments">Tell us the reason of your visit today.</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
 
-          <label>Tell us the reason of your visit today:</label>
-          <textarea rows="5" cols="30"></textarea>
-
-          <input type="submit" value="sign-up">
-        </fieldset>
-      </form>
+            <input type="submit" value="sign up">
+        </form>
     </main>
 
     <footer>
-      <p>© Copyright 2020</p>
+        &copy; Copyright 2020
     </footer>
 
-  </div>
+</div>
+
 </body>
 </html>
