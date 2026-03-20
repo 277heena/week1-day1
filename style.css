@@ -147,3 +147,16 @@ input[type="submit"] {
     width: 100px;
     height: 30px;
 }
+#album {
+  list-style: none;
+  padding: 0;
+}
+
+#photo {
+  display: inline-block;
+  margin: 10px;
+}
+
+#photo img {
+  width: 400px;
+}
