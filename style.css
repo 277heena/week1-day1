@@ -147,16 +147,51 @@ input[type="submit"] {
     width: 100px;
     height: 30px;
 }
-#album {
-  list-style: none;
-  padding: 0;
+
+/* Gallery */
+#gallery {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
-#photo {
-  display: inline-block;
-  margin: 10px;
+#gallery li {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    vertical-align: top;
 }
 
-#photo img {
-  width: 400px;
+#gallery img {
+    width: 200px;
+    height: 150px;
+    display: block;
+}
+
+.caption {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.description {
+    position: absolute;
+    left: 0;
+    bottom: 35px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #000;
+    padding: 8px;
+    box-sizing: border-box;
+    visibility: hidden;
+    text-align: center;
+}
+
+#gallery li:hover .description {
+    visibility: visible;
+}
+
+#gallery li:hover {
+    cursor: pointer;
 }
