@@ -39,11 +39,50 @@ let descriptions = [
 
 let gallery = document.getElementById("gallery");
 
-for (let i = 0; i < images.length; i++) {
-    gallery.innerHTML +=
-        "<li id='photo" + (i + 1) + "'>" +
-        "<img src='" + images[i] + "' alt='" + captions[i] + "'>" +
-        "<p class='caption'>" + captions[i] + "</p>" +
-        "<p class='description'>" + descriptions[i] + "</p>" +
-        "</li>";
+if (gallery) {
+    for (let i = 0; i < images.length; i++) {
+        gallery.innerHTML +=
+            "<li id='photo" + (i + 1) + "'>" +
+            "<img src='" + images[i] + "' alt='" + captions[i] + "'>" +
+            "<p class='caption'>" + captions[i] + "</p>" +
+            "<p class='description'>" + descriptions[i] + "</p>" +
+            "</li>";
+    }
+}
+
+function currentTime() {
+    var d = new Date();
+    var hr = d.getHours();
+    var min = d.getMinutes();
+    var sec = d.getSeconds();
+    var ampm;
+
+    if (sec < 10) {
+        sec = "0" + sec;
+    }
+
+    if (min < 10) {
+        min = "0" + min;
+    }
+
+    if (hr == 0) {
+        hr = 12;
+        ampm = "AM";
+    } else if (hr < 12) {
+        ampm = "AM";
+    } else if (hr == 12) {
+        ampm = "PM";
+    } else {
+        hr = hr - 12;
+        ampm = "PM";
+    }
+
+    var time = hr + ":" + min + ":" + sec + " " + ampm;
+
+    document.getElementById("clock").innerHTML = time;
+}
+
+if (document.getElementById("clock")) {
+    currentTime();
+    setInterval(currentTime, 1000);
 }

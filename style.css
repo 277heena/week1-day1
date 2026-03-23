@@ -195,3 +195,11 @@ input[type="submit"] {
 #gallery li:hover {
     cursor: pointer;
 }
+#timeofday {
+    background: linear-gradient(to right, #6ec6ff, #ffd180);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
