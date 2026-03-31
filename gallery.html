@@ -9,29 +9,37 @@
 
     <header>My Web Site Brand</header>
 
-        <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="page2.html">Page 2</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="page3.html">Page 3</a></li>
-    <li><a href="page4.html">Page 4</a></li>
-  </ul>
-</nav>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+        <li><a href="page4.html">Page 4</a></li>
+      </ul>
+    </nav>
 
     <main>
-  <h1>Gallery</h1>
-  <p>Welcome to the gallery! Here you will find a collection of beautiful photos.</p>
+      <h1>Gallery</h1>
+      <p>Welcome to the gallery! Here you will find a collection of beautiful photos.</p>
 
-  <ul id="gallery"></ul>
-<script src="script.js"></script>
-</main>
+      <div id="gallery-wrapper">
+        <ul id="gallery"></ul>
 
+        <div id="infobox">
+          <h2 id="infoheading"></h2>
+          <p id="infotext"></p>
+          <a href="#" id="closebox"></a>
+        </div>
+      </div>
+    </main>
 
     <footer>
       <p>© Copyright 2020</p>
     </footer>
 
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
